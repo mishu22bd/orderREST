@@ -12,17 +12,17 @@ public class OrderService {
 	private OrderRepository inv;
 
     
-	public List<Order> ListAll() {
+	public List<OrderFinal> ListAll() {
        return inv.findAll();		
 		
 	}
 	
-   public void save(Order order) {
+   public void save(OrderFinal order) {
    		inv.save(order);
 
    	}
    
- public Order get(Integer id) {
+ public OrderFinal get(Integer id) {
 	 return inv.findById(id).get();
 	 	 
     }
